@@ -1,0 +1,395 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    font-family: helvetica-neue,Helvetica-Neue,Helvetica,Arial,sans-serif;
+    font-size: 1.4rem;
+    color: #333;
+}
+.Header {
+    width:1519.2px;
+    height:138.8px;
+    position: relative;
+    background: #fff;
+    z-index: 100;
+}
+
+.InsideHeader {
+    margin:auto;
+    width:1440px;
+    height:138.8px;
+    max-width: 1440px;
+}
+
+.Upperheader {
+    display: flex;
+    height: 32.8px;
+    width: 1440px;
+}
+.Subheader {
+    position: relative;
+    float: left;
+    box-sizing: border-box!important;
+    padding: 10px;
+    width: 100%;
+}
+
+.Task {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow: auto;
+    float:right;
+    font-size: 1.1rem;
+}
+
+.TaskList {
+  float: left;
+    list-style-type: none;
+    margin: 0 0 0 1.26em;
+    bottom: 5px;
+    position: relative;
+}
+
+.TaskLink {
+   text-decoration: none;
+    color: #333;
+    font-size: 11px;
+    opacity: 0.9;
+    font-family: inherit;
+}
+
+.TaskLink:hover {
+  text-decoration: underline;
+}
+
+.Search {
+  width:1440px;
+  height:59.2px;
+  display:flex;
+  background-color: red;
+  width:100%;
+  align-items: center;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.SearchLeft {
+   float:left;
+   transition: width .3s ease,padding .3s ease,text-indent .3s ease;
+   text-indent: 0;
+   position: relative;
+   width: 25%;
+   width:360px;
+   height:59.2px;
+}
+.Leftbar {
+  display: flex;
+  width:340px;
+  height:39.2px;
+  margin:10px;
+}
+
+.Header3__groupItem {
+  width:64px;
+  height:39.2px;
+}
+.HomedepotImage {
+    width: 64.53px;
+    position: relative;
+    bottom: 27px;
+    height:64.53px;
+}
+
+.Store {
+  margin-left: 20px;
+}
+
+.MyStore__button {
+    display: inline-flex;
+    align-items: center;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+}
+
+.MyStore__icon {
+    float: left;
+    padding-top: 2px;
+    margin-right: 5px;
+}
+
+.MyStore__label {
+    display: block;
+    font-family: sans-serif;
+    white-space: nowrap;
+    font-weight: 300;
+    font-size: 14px;
+}
+.MyStore__store {
+    font-family: helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-overflow: ellipsis;
+    max-width: 110px;
+    font-weight: 600;
+}
+
+.Searchmid {
+    width:50%;
+    width:720px;
+    position: relative;
+    float: left;
+    box-sizing: border-box!important;
+    padding: 10px;
+}
+
+.SearchBox {
+     display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.Search-searchbar {
+    display: block;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    line-height: 1;
+    height: 36px;
+    font-size: 1.4rem;
+    padding: 0 10px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #999;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    width:700px;
+    height: 36px;
+}
+
+.Suggestions {
+  position: relative;
+  top:30px;
+}
+
+.Search-btn {
+    width: 30px;
+    height: 36px;
+    /* height: 100%; */
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    padding: 0 0px;
+    transition: top .3s ease;
+    background-color: #f96302;
+    border:none;
+}
+
+.fa {
+    color: white;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: relative;
+    font-size: 22px;
+}
+.store-dropdown {
+    padding-top: 16px;
+    position: absolute;
+    opacity: 1;
+    max-height: 520px;
+    padding: 0 5px;
+    z-index: 9999;
+    background-color: #fff;
+    top: 58.8px;
+    bottom: auto;
+    left: 55.6px;
+    right: auto;
+    width: 330px;
+    height: 319px;
+    border: 1px solid #f2f2f2;
+}
+
+.arrow-button {
+    top: -9px;
+    left: 50%;
+    margin-left: -10px;
+    border-color: #fff transparent transparent #fff;
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    transform: rotate(45deg);
+    box-shadow: 0 0 3px rgba(0,0,0,.25), 0 5px 10px rgba(0,0,0,.25);
+    z-index: 2;
+    border-width: 10px;
+    border-color: #fff transparent transparent #fff;
+    border-style: solid;
+    transition: box-shadow 0s ease .1s;
+}
+
+.inner-store-dropdown {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    z-index: 3;
+    width: 320px;
+    height: 303px;
+}
+.Gaum {
+    position: relative;
+    float: left;
+    box-sizing: border-box!important;
+    padding: 10px;
+    width:100%;
+}
+.Gaum-link {
+    font-size: 18px;
+}
+.Gaum-link {
+    font-size: 18px;
+    text-align: left;
+}
+
+.Gaum-link:hover {
+    text-decoration: underline;
+}
+
+a {
+  color:#333;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.Left-storebar {
+    width: 50%;
+    position: relative;
+    float: left;
+    box-sizing: border-box!important;
+    padding: 10px;
+}
+
+.Left-storebar-all {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+.Store-list-items {
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    width: 140px;
+    height: 33.6px;
+    bottom: 21px;
+    position: relative;
+}
+.spanStore {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.Store-list-items-second {
+    text-align: left;
+    font-weight: 100;
+    font-size: 14px;
+    width: 140px;
+    height: 33.6px;
+    position: relative;
+}
+.Store-list-items-third {
+    text-align: left;
+    font-weight: 300;
+    font-size: 14px;
+    width: 140px;
+    height: 33.6px;
+    position: relative;
+    top: 49px;
+}
+
+.Store-list-link {
+  font-weight: 200;
+  font-size:11px;
+}
+
+.Store-list-link:hover {
+  text-decoration: underline;
+}
+
+.Store-bottom {
+    width: 320px;
+    padding: 10px;
+    position: relative;
+    float: left;
+    height: 72px;
+    top: 18px;
+}
+.Horizontal-line {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    position: relative;
+    top: 18px;
+}
+
+.Button-find {
+    color: #f96302;
+    height: 40px;
+    text-shadow: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1em;
+    top: 15px;
+    position: relative;
+    right: 6px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Button-find :hover {
+    background-color: #f96302;
+    color:#fff;
+}
+
+.button-change-hover {
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #f96302;
+    width: 315px;
+}
+
+.bttn-content {
+    height: 34px;
+    position: relative;
+    top: 8px;
+}
